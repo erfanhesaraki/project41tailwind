@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../dist/output.css">
+
+
+</head>
+
+<body class="font-serif">
+    <header class="bg-hero   bg-cover bg-no-repeat w-full h-[90vh] ">
+        <section class="lg:border-b-2 flex flex-wrap ">
+            <figure class="pl-6 w-screen lg:w-[20%]  h-[90px]  flex lg:justify-center items-center  justify-start  ">
+                <img src="img/2.png" alt="" class=" h-[50%] w-[40%] sm:w-[20%] lg:w-[59%] ">
+            </figure>
+            <nav class=" hidden lg:flex  h-[70px]  lg:h-[90px] w-screen lg:w-[70%] justify-end">
+                <ul class=" flex justify-evenly lg:w-[70%] xl:w-[50%] h-[100%]   ">
+                    <li class="  w-[20%] text-xl text-white 
+                    relative transition duration-1000 before:absolute before:bottom-[2px] before:left-[30%] before:content-['']  before:bg-white before:text-white  before:w-0
+                    before:h-[2px] hover:before:w-[45%]  ">
+                        <a href="" class=" flex h-[100%] justify-center items-center     
+                         ">Home</a>
+                    </li>
+
+                    <li class="  w-[20%] text-xl text-white
+                    relative transition duration-1000 before:absolute before:bottom-[1px] before:left-[30%] before:content-['']  before:bg-white before:text-white  before:w-0
+                    before:h-[2px] hover:before:w-[45%]  ">
+                        <a href="" class="flex h-[100%] justify-center items-center  ">Rooms</a>
+                    </li>
+                    <li class="  w-[20%] text-xl text-white
+                    relative transition duration-1000 before:absolute before:bottom-[1px] before:left-[30%] before:content-['']  before:bg-white before:text-white  before:w-0
+                    before:h-[2px] hover:before:w-[45%]  ">
+                        <a href="" class="flex h-[100%] justify-center items-center">About</a>
+                    </li>
+                    <li class="  w-[20%] text-xl text-white
+                    relative transition duration-1000 before:absolute before:bottom-[1px] before:left-[30%] before:content-['']  before:bg-white before:text-white  before:w-0
+                    before:h-[2px] hover:before:w-[45%]  " id="ham-Menu">
+                        <a href="" class="flex h-[100%] justify-center items-center">Blog</a>
+                        <ul class="bg-twoColor hidden " id="list">
+                            <li class="h-[40px] text-center">
+                                <a href="" class="h-full">Blog</a>
+                            </li>
+                            <li class="h-[40px] text-center">
+                                <a href="" class="h-full">Blog Details</a>
+                            </li>
+                            <li class="h-[40px] text-center">
+                                <a href="" class="h-full">Element</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="  w-[20%] text-xl text-white
+                    relative transition duration-1000 before:absolute before:bottom-[1px] before:left-[20%] before:content-['']  before:bg-white before:text-white  before:w-0
+                    before:h-[2px] hover:before:w-[65%]  ">
+                        <a href="" class="flex h-[100%] justify-center items-center">ContactUs</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class=" hidden lg:d-flex lg:flex   h-[90px] lg:w-[10%] bg-twoColor" id="self">
+                <h2 class="flex  w-full justify-center items-center text-white lg:text-[25px]">BookNow
+                </h2>
+            </div>
+
+
+
+        </section>
+        <section class="flex lg:hidden  w-full h-[55px]  bg-oneColor justify-end items-center relative">
+            <nav class=" w-[100%] h-[250px] absolute top-[54px] left-0 bg-oneColor " id="hambergur-menu">
+                <ul class="w-[100%] h-full ">
+                    <li class="h-[20%]">
+                        <a href="#" class="text-white uppercase ps-1 ">Home</a>
+                    </li>
+                    <li class="h-[20%]">
+                        <a href="#" class="text-white uppercase ps-1 ">Rooms</a>
+                    </li>
+                    <li class="h-[20%]">
+                        <a href="#" class="text-white uppercase ps-1 ">About</a>
+                    </li>
+                    <li class="h-[20%]">
+                        <a href="#" class="text-white uppercase ps-1 ">Blog</a>
+                    </li>
+                    <li class="h-[20%]">
+                        <a href="#" class="text-white uppercase ps-1 ">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+            <div class="w-[80px] h-[30px] flex justify-center items-center border rounded bg-threeColor text-white font-serif "
+                id="btn-menu">
+                menu<span class="material-symbols-outlined">
+                    menu
+                </span>
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+        <section class="flex flex-col  items-center justify- md:justify-between  h-[65vh] lg:h-[80vh] ">
+            <div
+                class="  h-[100px]  md:h-[100px] lg:h-[150px] xl:h-[150px]    w-[90%]  sm:w-[80%] md:w-[65%]  lg:w-[65%] xl:w-[55%] 2xl:w-[40%]    sm:text-[35px]  xl:text-[60px] 2xl:text-[55px]  flex justify-center items-end text-center mt-10 ">
+                <h2 class="flex text-white">
+                    Rest Journey in Single step, in the breathtaking
+                </h2>
+            </div>
+
+
+
+            <div class="flex  flex-wrap  justify-evenly items-center   w-[80%] lg:w-[85%] h-[500px]
+            md:h-[300px]       ">
+                <div class="flex flex-col   w-full  md:w-[50%] lg:w-[200px] ">
+                    <label for="data1" class="text-white  mb-2">Check In Date*</label>
+                    <div class="flex justify-start items-center ">
+                        <span class="material-symbols-outlined text-white">
+                            calendar_month
+                        </span>
+                        <input type="text" data-type="datepicker" role="input" id="data1" name="data1"
+                            placeholder="Check In " class="outline-none border-0 bg-transparent  border-b w-[90%]">
+                    </div>
+
+                </div>
+                <div class="flex flex-col   w-full  md:w-[50%] lg:w-[200px] ">
+                    <label for="data1" class="text-white mb-2">Check Out Date*</label>
+                    <div class="flex justify-start items-center">
+                        <span class="material-symbols-outlined text-white">
+                            calendar_month
+                        </span>
+                        <input type="text" id="data1" name="data1" placeholder="Check In "
+                            class="outline-none border-0 bg-transparent border-b w-[90%]">
+                    </div>
+                </div>
+                <div class="flex border  w-full  md:w-[200px] lg:w-[250px] ">
+                    <select name=" " id="" class="py-4 w-full bg-transparent text-white >
+                    <option value=" Adult">Adult</option>
+                        <option value="Adult">Adult</option>
+                        <option value="Adult">Adult</option>
+                        <option value="Adult">Adult</option>
+
+                    </select>
+                </div>
+                <div class="flex border w-full md:w-[200px] lg:w-[250px]  ">
+                    <select name=" " id="" class="py-4 w-full bg-transparent text-white >
+                    <option value=" Children">Children</option>
+                        <option value="Children">Children</option>
+                        <option value="Children">Children</option>
+                        <option value="Children">Children</option>
+
+
+                    </select>
+                </div>
+                <div class="flex border w-full md:w-[200px] lg:w-[250px]">
+                    <button class="bg-white text-black   w-full   py-3 border-0 outline-none text-lg ">SEARCH</button>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+
+
+    <main class="main m-0">
+        <section class=" flex flex-col md:flex-row container px-3 mx-auto mt-16">
+
+
+            <figure class="   w-[100%] lg:w-[50%] xl:w-[40%] flex justify-center lg:justify-end items-center">
+                <img src="img/4.jpg" alt="" class="w-[70%] h-[70%] md:w-[90%] md:h-[90%]">
+            </figure>
+            <div class="ps-3   w-[100%]  lg:w-[50%] xl:w-[35%] my-2 flex  flex-col items-center justify-center">
+                <h2 class="text-[20px] md:text-[25px] w-[60%] text-center  font-serif ">Luxury & Comfort Our services
+                    and
+                    wonders
+                    of
+                    Prague</h2>
+                <p class="py-3 text-justify  w-[80%] ">The concept and service of the best luxury hotels in
+                    Asturias in our
+                    sophisticated Urban Double and
+                    Unique Junior Suite rooms, with the possibility of enjoying a furnished terrace in our Double Urban
+                    Loft and Unique Junior Loft Suite.</p>
+                <button
+                    class="border   border-twoColor   w-[120px] lg:w-[160px] mt-9 h-[50px] text-twoColor   hover:bg-twoColor hover:text-white  transition duration-500  ">LearnMore</button>
+            </div>
+
+
+            <figure class=" hidden xl:flex     xl:w-[25%]">
+                <img src="img/5.jpg" alt="" class="py-6">
+            </figure>
+
+
+        </section>
+
+        <section class="pt-20 bg-fourColor    ">
+
+            <div class="container mx-auto px-16">
+                <h2 class="text-4xl">
+                    Our Rooms
+                </h2>
+                <p class="mt-3 mb-10  md:w-[40%] lg:w-[30%]">
+                    The concept and service of the best luxury hotels in Asturias in our sophisticated.
+                </p>
+
+
+            </div>
+
+            <div class="swiper mySwiper  w-[95%] mx-auto">
+                <div class="swiper-wrapper">
+                    <figure class="swiper-slide  h-[450px] relative">
+                        <img src="img/7.jpg" alt="" class="h-[100%]">
+                        <div
+                            class="absolute  w-[55%] h-[40%] md:w-[60%] md:h-[30%] bottom-[5px] left-[5px] flex flex-col justify-center  items-start ps-3 text-white ">
+                            <h3 class="text-3xl">
+                                <a href="#">Luxurious Room </a>
+                            </h3>
+                            <p>2 Adult 1 Children</p>
+                            <div>
+                                <span>
+                                    Started from
+                                    <strong class="font-bolder">$500</strong>
+                                </span>
+                            </div>
+                        </div>
+
+
+                    </figure>
+
+                    <figure class="swiper-slide h-[450px] relative">
+                        <img src="img/8.jpg" alt="" class="h-[100%]">
+
+
+                        <div
+                            class="absolute w-[55%] h-[40%] md:w-[60%] md:h-[30%] bottom-[5px] left-[5px] flex flex-col justify-center  items-start ps-3 text-white ">
+                            <h3 class="text-3xl">
+                                <a href="#">Couple Room </a>
+                            </h3>
+                            <p>2 Adult 1 Children</p>
+                            <div>
+                                <span>
+                                    Started from
+                                    <strong class="font-bolder">$500</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </figure>
+
+                    <figure class="swiper-slide h-[450px] relative">
+                        <img src="img/6.jpg" alt="" class="h-[100%]">
+                        <div
+                            class="absolute  w-[55%] h-[40%] md:w-[60%] md:h-[30%] bottom-[5px] left-[5px] flex flex-col justify-center  items-start ps-3 text-white ">
+                            <h3 class="text-3xl">
+                                <a href="#">Luxurious Room </a>
+                            </h3>
+                            <p>2 Adult 1 Children</p>
+                            <div>
+                                <span>
+                                    Started from
+                                    <strong class="font-bolder">$500</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </figure>
+
+                    <figure class="swiper-slide h-[450px] relative">
+                        <img src="img/7.jpg" alt="" class="h-[100%]">
+                        <div
+                            class="absolute  w-[55%] h-[40%] md:w-[60%] md:h-[30%]  bottom-[5px] left-[5px] flex flex-col justify-center  items-start ps-3 text-white ">
+                            <h3 class="text-3xl">
+                                <a href="#">Family Room </a>
+                            </h3>
+                            <p>2 Adult 1 Children</p>
+                            <div>
+                                <span>
+                                    Started from
+                                    <strong class="font-bolder">$500</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </figure>
+
+
+                    <figure class="swiper-slide h-[450px] relative">
+                        <img src="img/8.jpg" alt="" class="h-[100%]">
+
+
+                        <div
+                            class="absolute w-[55%] h-[40%] md:w-[60%] md:h-[30%] bottom-[5px] left-[5px] flex flex-col justify-center  items-start ps-3 text-white ">
+                            <h3 class="text-3xl">
+                                <a href="#">Couple Room </a>
+                            </h3>
+                            <p>2 Adult 1 Children</p>
+                            <div>
+                                <span>
+                                    Started from
+                                    <strong class="font-bolder">$500</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="swiper-slide h-[450px] relative">
+                        <img src="img/7.jpg" alt="" class="h-[100%]">
+                        <div
+                            class="absolute  w-[55%] h-[40%] md:w-[60%] md:h-[30%]  bottom-[5px] left-[5px] flex flex-col justify-center  items-start ps-3 text-white ">
+                            <h3 class="text-3xl">
+                                <a href="#">Family Room </a>
+                            </h3>
+                            <p>2 Adult 1 Children</p>
+                            <div>
+                                <span>
+                                    Started from
+                                    <strong class="font-bolder">$500</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </figure>
+
+
+
+                </div>
+                <div class="swiper-button-next absolute text-white  "></div>
+                <div class="swiper-button-prev absolute text-white  "></div>
+
+            </div>
+
+
+            <div class="py-28  container
+            mx-auto flex flex-col justify-center items-center ">
+                <h2 class="  text-[23px]  md:text-[32px] md:w-[70%]  lg:text-[38px] lg:w-[60%] text-center">
+                    Surrounded by galleries, boutiques, restaurants and cafés, our Hotel is a hub of energy and style.
+                </h2>
+                <a href="#" class="mt-6 underline decoration-dotted">Find a Room For You</a>
+            </div>
+        </section>
+
+        <section class="bg-fourColor  w-full flex flex-wrap justify-center ">
+
+
+            <div class=" w-full md:w-[450px] lg:w-[500px]  ">
+                <figure class="">
+                    <img src="img/9.jpg" alt="drink" class="w-[100%] h-[100%]">
+                </figure>
+            </div>
+
+
+
+
+
+            <div
+                class="w-[450px] lg:w-[500px] h-[400px] lg:h-[476px]  flex flex-col justify-center items-center bg-black ">
+                <div class="">
+                    <h2 class="text-white text-center text-[30px] hover:text-twoColor">Take advantage of our
+                        seasonal specials.</h2>
+                </div>
+                <div class=" flex justify-center my-3">
+                    <p class="text-fiveColor text-center lg:w-[70%]">The concept and service of the best luxury
+                        hotels in
+                        Asturias in our
+                        sophisticated Urban
+                        Double and Unique Junior Suite rooms, with the possibility of enjoying a furnished terrace
+                        in our Double Urban Loft and Unique Junior Loft Suite.</p>
+                </div>
+                <div class=" my-3">
+                    <button
+                        class=" border-twoColor  border-2  w-[120px] h-[40px] text-twoColor hover:bg-twoColor hover:text-white">ViewProject</button>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+        <section class="container mt-5 lg:mt-20  md:[h-500px] md:w-[450px]  lg:w-full lg:h-full mx-auto  ">
+            <figure class="w-[100%] h-[100%]">
+                <img src="img/10.png" alt="" class="w-[100%] h-[100%] ">
+            </figure>
+        </section>
+
+        <section class=" my-6 lg:my-40 ">
+            <h2 class="text-center text-3xl md:text-4xl lg:text-6xl mb-10">We Offer to Our Guest</h2>
+
+        </section>
+
+
+        <section class="container mx-auto  flex flex-wrap justify-evenly items-center  ">
+
+            <figure class="   w-[350px]  h-[400px] relative  ">
+                <img src="img/11.jpg" alt="" class="w-[100%] h-[100%]">
+                <figcaption class="absolute bottom-[20px] left-[50%] translate-x-[-50%] text-white text-l md:text-2xl">
+                    Free Drinks
+                </figcaption>
+            </figure>
+
+            <figure class="  w-[350px]  h-[400px] my-2  sm:py-0 relative  ">
+                <img src="img/12.jpg" alt="" class="w-[100%] h-[100%]">
+                <figcaption class="absolute bottom-[20px] left-[50%] translate-x-[-50%] text-white text-l md:text-2xl">
+                    Free Breakfast
+                </figcaption>
+            </figure>
+
+            <figure class="   w-[350px]  h-[400px]   relative">
+                <img src="img/13.jpg" alt="" class="w-[100%] h-[100%]">
+
+                <figcaption class="absolute bottom-[20px] left-[50%] translate-x-[-50%] text-white text-xl md:text-2xl">
+                    Free Dinner
+                </figcaption>
+            </figure>
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+        <section class="w-[100%]  bg-twoColor">
+            <div class="swiper ErfanSwiper  w-[80%] mx-auto px-10">
+                <div class="swiper-wrapper ms-10">
+                    <div class="swiper-slide   ps-5  flex justify-evenly items-start  flex-col text-white">
+                        <h2 class="pt-3">DeliciousFood</h2>
+                        <p class="py-5 text-start  w-[75%]">"Leather detail shoulder contrastic colour
+                            contour stunning silhouette working peplum.
+                            Statement buttons cover-up tweaks patch.</p>
+                        <h3 class="py-10">-Omeka Lotus</h3>
+                    </div>
+                    <div class="swiper-slide   ps-5  flex justify-evenly items-start  flex-col text-white">
+                        <h2 class="pt-3">Nice Accommodation</h2>
+                        <p class="py-5 text-start  w-[75%]">"Leather detail shoulder contrastic colour
+                            contour stunning silhouette working peplum.
+                            Statement buttons cover-up tweaks patch.</p>
+                        <h3 class="py-10">-Omeka Lotus</h3>
+                    </div>
+                    <div class="swiper-slide   ps-5  flex justify-evenly items-start  flex-col text-white">
+                        <h2 class="pt-3">Nice Accommodation</h2>
+                        <p class="py-5 text-start  w-[75%]">"Leather detail shoulder contrastic colour
+                            contour stunning silhouette working peplum.
+                            Statement buttons cover-up tweaks patch.</p>
+                        <h3 class="py-10">- Omeka Lotus</h3>
+                    </div>
+                    <div class="swiper-slide   ps-5  flex justify-evenly items-start  flex-col text-white">
+                        <h2 class="pt-3">Delicious Food</h2>
+                        <p class="py-5 text-start  w-[75%]">"Leather detail shoulder contrastic colour
+                            contour stunning silhouette working peplum.
+                            Statement buttons cover-up tweaks patch.</p>
+                        <h3 class="py-10">- Omeka Lotus</h3>
+                    </div>
+                    <div class="swiper-slide   ps-5  flex justify-evenly items-start  flex-col text-white">
+                        <h2 class="pt-3">Nice Accommodation</h2>
+                        <p class="py-5 text-start  w-[75%]">"Leather detail shoulder contrastic colour
+                            contour stunning silhouette working peplum.
+                            Statement buttons cover-up tweaks patch.</p>
+                        <h3 class="py-10">- Omeka Lotus</h3>
+                    </div>
+
+
+
+                </div>
+                <div class="swiper-button-next absolute text-white  "></div>
+                <div class="swiper-button-prev absolute text-white  "></div>
+
+            </div>
+        </section>
+
+        <section class="w-[20%] h-[90vh] bg-slate-200 border fixed top-[90px] left-0 z-20 hidden" id="about-me">
+            <figure class="h-[300px] w-full border ">
+                <img src="img/13.jpg" alt="Food" class="w-full h-full">
+            </figure>
+
+            <div class="h-[400px] flex flex-col justify-evenly items-center">
+                <h1 class="text-3xl">ERFAN HESARAKI</h1>
+                <h3 class="text-1xl">LINKEDIN: <a href="https://www.linkedin.com/in/erfan-hesaraki-3995551a6/">ERFAN
+                        HESARAKI</a></h3>
+                <h3 class="text-1xl">GITHUB: <a href="https://github.com/erfanhesaraki">ERFAN HESARAKI</a></h3>
+                <h3 class="text-1xl">INSTAGRAM: <a href="https://www.instagram.com/erfan_hesaraki_developer/">ERFAN
+                        HESARAKI
+                        DEVELOPER</a></h3>
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-black h-[800px] lg:h-[400px]  flex flex-wrap">
+        <section class="flex flex-wrap text-white container mx-auto h-[100%] ">
+
+            <div
+                class=" w-100% sm:w-[50%] md-w[50%] lg:w-[25%]  flex justify-center items-start lg:items-center flex-col  ">
+                <img src="img/3.png" alt="" class="mb-5">
+                <div class="mb-5  w-[70%] lg:w-[90%]">
+                    <p> Leather detail contrastic colour contour stunning silhouette working peplum. Statement buttons
+                        patch.</p>
+                </div>
+
+                <div class="  ">
+                    <a href="#" class="px-2 text-fiveColor">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="#" class="px-2  text-fiveColor">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="px-2  text-fiveColor">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="#" class="px-2  text-fiveColor">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class=" w-100% w-[300px] sm:w-[50%] md-w[50%] lg:w-[25%] flex justify-center items-start lg:items-center  flex-col ">
+                <h4 class="  text-2xl ">
+                    Navigation
+                </h4>
+
+                <ul>
+                    <li class="">
+                        <a href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            Our Rooms
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            Book A Room
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            Privacy & Policy
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+            <div class=" w-100% w-[300px] sm:w-[50%] md-w[50%] lg:w-[25%]
+            flex justify-center items-start flex-col 
+            lg:items-center 
+            ">
+                <h4 class="mb-5 text-start text-2xl  w-[250px]">
+                    Contact
+                </h4>
+
+                <ul class="">
+                    <li class="mt-3">
+                        <a href="#">
+                            76/A, Green Lane, Dhanmondi, NYC
+                        </a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#">
+                            10 (87) 738-3940
+                        </a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#">
+                            contact@carwash.com
+                        </a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#">
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div
+                class=" w-100% sm:w-[50%] md-w[50%] lg:w-[25%] flex justify-center items-start flex-col lg:items-center ">
+                <div class="">
+                    <h4 class="mb-5 text-2xl">
+                        Newsletter
+                    </h4>
+                    <p>
+                        Subscribe our newsletter to get updates.
+                    </p>
+                </div>
+
+                <form action="#" class="flex justify-center items-start flex-col mt-3">
+                    <input type="email" name="EMAIL" id="newsletter-form-email" placeholder="  Enter your email "
+                        class="mt-3 py-3 px-6">
+                    <button type="submit" name="submit" id="newsletter-submit"
+                        class="email_icon newsletter-submit button-contactForm mt-3 bg-twoColor   py-3 w-[217px] border-0">
+                        Search
+                    </button>
+                </form>
+
+            </div>
+
+
+        </section>
+
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/master.js"></script>
+</body>
+
+</html>
